@@ -1,4 +1,4 @@
-module barrel_shifter_8bit_tb;
+module barrel_shifter_8bit_t;
   reg [7:0] in;
   reg [2:0] ctrl;
   wire [7:0] out; 
