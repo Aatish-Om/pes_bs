@@ -1,4 +1,4 @@
-module barrel_shifter_8bit (in, ctrl, out);
+module pes_bs (in, ctrl, out);
   input  [7:0] in;
   input [2:0] ctrl;
   output [7:0] out;
