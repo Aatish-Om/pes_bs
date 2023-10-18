@@ -4,18 +4,7 @@
    
 ## CONTENTS
 # DAY 1
-<details>
-<summary> Digital Logic with TL-Verilog and Makerchip </summary>
-<br>
-	
-[](https://github.com/RISC-V#links-for-easy-navigaton)
-  
-- [Combinational Logic in TL-Verilog using Makerchip](#combinational-logic-in-tl-verilog-using-makerchip)
-- [Sequential Logic](#sequential-logic)
-- [Pipelined Logic](#pipelined-logic)
-- [Validity](#validity)
-
-# Combinational Logic in TL-Verilog using Makerchip
+## Combinational Logic in TL-Verilog using Makerchip
 - Combinational logic refers to a type of digital logic circuit in which the output is solely determined by the current input values, without considering any past states or inputs.
 - There is no memory or feedback involved in combinational logic, which means that the output changes immediately in response to changes in the input.
 ## Logic Gates
@@ -30,7 +19,7 @@
 
 ![image](https://github.com/Aatish-Om/pes_bs/assets/125562864/2ab7eb98-06bf-4915-a970-80dc1acaefe5)
 
-3. **Basic Mux Implementation**
+## Basic Mux Implementation
 - A digital logic circuit that selects one of several input data lines and forwards it to a single output line.
 - The selection is based on a set of control signals.
 
@@ -386,15 +375,8 @@ _ **Identifiers and Types**
 </details>
 
 # DAY 2
-<details>
-<summary> Basic RISC-V CPU Microarchitecture </summary>
-<br>
-	
-[](https://github.com/RISC-V#links-for-easy-navigaton)
 
-+ [Introduction to simple RISC-V micro-architecture](#introduction-to-simple-RISC-V-micro-architecture)
-+ [Fetch and Decode](#fetch-and-decode)
-+ [RISC-V Control Logic](#risc-v-control-logic)
+## Basic RISC-V CPU Microarchitecture 
 
 # Introduction to simple RISC-V micro-architecture
 
@@ -1009,16 +991,7 @@ _ **Identifiers and Types**
 </details>
 
 # DAY 3
-<details>
-<summary> Digital Logic with TL-Verilog and Makerchip </summary>
-<br>
-	
-[](https://github.com/RISC-V#links-for-easy-navigaton)
-  
-- [Combinational Logic in TL-Verilog using Makerchip](#combinational-logic-in-tl-verilog-using-makerchip)
-- [Sequential Logic](#sequential-logic)
-- [Pipelined Logic](#pipelined-logic)
-- [Validity](#validity)
+## Digital Logic with TL-Verilog and Makerchip 
 
 # Combinational Logic in TL-Verilog using Makerchip
 - Combinational logic refers to a type of digital logic circuit in which the output is solely determined by the current input values, without considering any past states or inputs.
@@ -1394,15 +1367,7 @@ _ **Identifiers and Types**
 </details>
 
 # DAY 4
-<details>
-<summary> Basic RISC-V CPU Microarchitecture </summary>
-<br>
-	
-[](https://github.com/RISC-V#links-for-easy-navigaton)
-
-+ [Introduction to simple RISC-V micro-architecture](#introduction-to-simple-RISC-V-micro-architecture)
-+ [Fetch and Decode](#fetch-and-decode)
-+ [RISC-V Control Logic](#risc-v-control-logic)
+## Basic RISC-V CPU Microarchitecture 
 
 # Introduction to simple RISC-V micro-architecture
 
@@ -2017,15 +1982,8 @@ _ **Identifiers and Types**
 </details>
 
 # DAY 5
-<details>
-<summary> Complete Pipelined RISC-V CPU Micro-architecture </summary>
-<br>
-	
-[](https://github.com/RISC-V#links-for-easy-navigaton)
 
-+ [Pipelining the CPU](#pipelining-the-cpu)
-+ [Solutions to Pipeline Hazards](#solutions-to-pipeline-hazards)
-+ [Load/Store Instructions and Completing RISC-V CPU](#load/store-instructions-and-completing-risc-v-cpu)
+## Complete Pipelined RISC-V CPU Micro-architecture 
 
 # Pipelining the CPU
 - Pipelining a RISC-V processor involves breaking down the instruction execution into multiple stages, allowing for the concurrent processing of multiple instructions and improving overall performance.
@@ -3422,7 +3380,6 @@ _ **Identifiers and Types**
 ![image](https://github.com/Aatish-Om/pes_bs/assets/125562864/a19f6b02-07c2-4f92-af20-68f3e9f41c65)
 
 
-</details>
 
 
 ## CONCLUSION
