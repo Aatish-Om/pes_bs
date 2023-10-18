@@ -3378,10 +3378,3 @@ _ **Identifiers and Types**
 ![image](https://github.com/Aatish-Om/pes_bs/assets/125562864/fe84efe8-c2dc-45a6-9850-1fcbbb6a2161)
 
 ![image](https://github.com/Aatish-Om/pes_bs/assets/125562864/a19f6b02-07c2-4f92-af20-68f3e9f41c65)
-
-
-
-
-## CONCLUSION
-- When comparing the code for a RISC-V CPU core in TL-Verilog and SystemVerilog using Makerchip platform, you can visually see the significant code reduction achieved with TL-Verilog, making it an attractive option for projects where code simplicity and conciseness are valued. However, the ultimate choice should align with your project's goals and constraints.
-</details>
