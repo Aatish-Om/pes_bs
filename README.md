@@ -42,8 +42,8 @@ y_int = 4'b0;
 
 end
 endmodule
-
 ```
+
 ![aat01](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/8d520f2a-5f99-4706-8d34-ccfbcecf7814)
 
 
@@ -99,8 +99,8 @@ end
 
 
 endmodule
-
 ```
+
 ![aat02](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/a789f35c-dab7-4b29-abad-204d0d6e8fab)
 
 
