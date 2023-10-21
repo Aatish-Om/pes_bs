@@ -1,72 +1,77 @@
 # Implementation of 1:4 Demultiplexer
-The Demultiplexer is a one-to-many circuit. By using it, the transmission of data can be done through one single input to a number of output data lines.
-Generally, Demultiplexers are used in decoder circuits and Boolean function generators.
 
-![image](https://github.com/spurthimalode/pes_demux_1_8/assets/142222859/7c55d595-222d-4350-bbc6-f89ee98fe604)
+A 1:4 demultiplexer, also known as a 1-to-4 demux or simply a 1-to-4 decoder, is a digital logic circuit that takes a single input and directs it to one of four possible outputs based on the input signal. It is the opposite of a multiplexer, which takes multiple inputs and directs one of them to a single output.
 
-## 1:8 Demultiplexer Truth Table
-The Truth Table for a 1:8 Demultiplexer is given below. ( Where A is the Input and , S0,S1,S2 are the three select lines and Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7 are the eight outputs of 1:8 Demultiplexer.
+A 1:4 demultiplexer has one input line (often labeled as D) and four output lines (often labeled as Y0, Y1, Y2, and Y3). The selection of which output to direct the input to is determined by the binary value applied to the control inputs. Typically, a 2-bit control input is used to select one of the four outputs, as follows:
 
-![image](https://github.com/spurthimalode/pes_demux_1_8/assets/142222859/c698958b-f52b-45c0-9857-c5c64b88321b)
+When the control inputs are 00 (binary), the input is directed to Y0.
+When the control inputs are 01 (binary), the input is directed to Y1.
+When the control inputs are 10 (binary), the input is directed to Y2.
+When the control inputs are 11 (binary), the input is directed to Y3.
+This demultiplexer is often used in digital circuits to distribute data or control signals to one of multiple output lines based on the control inputs. It can be implemented using various digital logic gates, such as AND gates and NOT gates.
 
-## Verilog Code 1:8 Demultiplexer
+![aat12](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/80f5bc4b-9ca1-4c54-94a0-8a5698f811b0)
 
-The Verilog code for 1:8 Demultiplexer is given below :
+
+## 1:4 Demultiplexer Truth Table
+The Truth Table for a 1:4 Demultiplexer is given below (Where S0,S1 are the three select lines and Y0,Y1,Y2,Y3 are the four outputs of 1:4 Demultiplexer):
+
+![aat11](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/eff777d6-2a43-4866-95fa-6e70a95a38f9)
+
+
+## Verilog Code 1:4 Demultiplexer
+
+The Verilog code for 1:4 Demultiplexer is given below :
 ```
-module pes_demux_1_8 (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output o7 , input [2:0] sel  , input i);
-reg [7:0]y_int;
-assign {o7,o6,o5,o4,o3,o2,o1,o0} = y_int;
+module pes_1_4_demux (output o0 , output o1, output o2 , output o3, input [1:0] sel  , input i);
+reg [3:0]y_int;
+assign {o3,o2,o1,o0} = y_int;
 integer k;
 always @ (*)
 begin
-y_int = 8'b0;
+y_int = 4'b0;
 	case(sel)
-		3'b000 : y_int[0] = i;
-		3'b001 : y_int[1] = i;
-		3'b010 : y_int[2] = i;
-		3'b011 : y_int[3] = i;
-		3'b100 : y_int[4] = i;
-		3'b101 : y_int[5] = i;
-		3'b110 : y_int[6] = i;
-		3'b111 : y_int[7] = i;
+		3'b00 : y_int[0] = i;
+		3'b01 : y_int[1] = i;
+		3'b10 : y_int[2] = i;
+		3'b11 : y_int[3] = i;
 	endcase
 
 end
 endmodule
-```
-## Test Bench Code for 1:8 Demultiplexer
 
-The test bench check that each combination of input lines that connects the appropriate input to the output. The test bench code in Verilog for 1:8 Demultiplexer is given below :
+```
+![aat01](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/8d520f2a-5f99-4706-8d34-ccfbcecf7814)
+
+
+## Test Bench Code for 1:4 Demultiplexer
+
 ```
 `timescale 1ns / 1ps
-module pes_demux_1_8_tb();
+module pes_1_4_demux_tb();
 	// Inputs
 	reg i;
-	reg [2:0] sel;
+	reg [1:0] sel;
 	
 	//TB Signals
 	reg clk,reset;
 
 	// Outputs
-	wire o7,o6,o5,o4,o3,o2,o1,o0;
+	wire o3,o2,o1,o0;
 
         // Instantiate the Unit Under Test (UUT)
-	pes_demux_1_8 uut (
+	pes_1_4_demux uut (
 		.sel(sel),
 		.o0(o0),
 		.o1(o1),
 		.o2(o2),
 		.o3(o3),
-		.o4(o4),
-		.o5(o5),
-		.o6(o6),
-		.o7(o7),
 		.i(i)
 	);
 
 	initial begin
-	$dumpfile("pes_demux_1_8_tb.vcd");
-	$dumpvars(0,pes_demux_1_8_tb);
+	$dumpfile("pes_1_4_demux_tb.vcd");
+	$dumpvars(0,pes_1_4_demux_tb);
 	// Initialize Inputs
 	i = 1'b0;
 	clk = 1'b0;
@@ -87,16 +92,23 @@ begin
 	else
 		sel <= sel + 1;
 end
+
+
+
 endmodule
+
 ```
+![aat02](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/a789f35c-dab7-4b29-abad-204d0d6e8fab)
+
+
 ## Simulation
 Code for the simulation is given below:
 ```
-iverilog pes_demux_1_8.v pes_demux_1_8_tb.v
+iverilog pes_1_4_demux.v pes_1_4_demux_tb.v
 ./a.out
-gtkwave pes_demux_1_8_tb.vcd
+gtkwave pes_1_4_demux_tb.vcd
 ```
-![image](https://github.com/spurthimalode/pes_demux_1_8/assets/142222859/b3cd69e1-4827-4396-a4bb-bc9f8e803e46)
+![aat1](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/8f319b7f-d269-448e-b6fc-e5f6ccb991a7)
 
 ## Synthesis
 Code for the synthesis is given below:
