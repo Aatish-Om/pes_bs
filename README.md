@@ -10,6 +10,9 @@ When the control inputs are 10 (binary), the input is directed to Y2.
 When the control inputs are 11 (binary), the input is directed to Y3.
 This demultiplexer is often used in digital circuits to distribute data or control signals to one of multiple output lines based on the control inputs. It can be implemented using various digital logic gates, such as AND gates and NOT gates.
 
+![1-to-4-Demux](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/5d6bf040-ce7a-48f0-a3e0-6565c84d1e89)
+
+
 ![aat12](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/80f5bc4b-9ca1-4c54-94a0-8a5698f811b0)
 
 
