@@ -136,7 +136,7 @@ yosys> synth -top pes_1_4_demux
 ![aat22](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/f6248763-c54d-4f54-b814-96d420d1fa49)
 
 ```
-yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> abc -liberty /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 ![aat24](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/568f02db-cdd6-4d4a-82ea-1718f4031236)
 
