@@ -141,8 +141,12 @@ yosys> show
 ## Gate level simulation
 Code for gate level simulation is given below:
 ```
-iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v pes_demux_1_8.v pes_demux_1_8_tb.v
-./a.out
-gtkwave pes_demux_1_8_tb.vcd
+iverilog /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/sky130_fd_sc_hd.v pes_1_4_demux.v pes_1_4_demux_tb.v
 ```
-![image](https://github.com/spurthimalode/pes_demux_1_8/assets/142222859/1afee132-c851-42ab-82ec-aec29e282197)
+```
+./a.out
+```
+```
+gtkwave pes_1_4_demux_tb.vcd
+```
+![aat3](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/292dfe12-eb14-4765-b22b-c7df6f77d4f1)
