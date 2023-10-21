@@ -110,9 +110,14 @@ endmodule
 Code for the simulation is given below:
 ```
 iverilog pes_1_4_demux.v pes_1_4_demux_tb.v
+```
+```
 ./a.out
+```
+```
 gtkwave pes_1_4_demux_tb.vcd
 ```
+
 ![aat1](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/8f319b7f-d269-448e-b6fc-e5f6ccb991a7)
 
 ## Synthesis
@@ -143,7 +148,7 @@ yosys> show
 ![aat23](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/32bf5118-d706-4764-bf0c-0bdc2f07c47c)
 
 
-## Gate level simulation
+## Gate level simulation (GLS)
 Code for gate level simulation is given below:
 ```
 iverilog /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/sky130_fd_sc_hd.v pes_1_4_demux.v pes_1_4_demux_tb.v
