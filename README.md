@@ -129,7 +129,7 @@ yosys> read_liberty -lib /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib
 yosys> read_verilog pes_1_4_demux.v
 ```
 ```
-yosys> synth -top pes_demux_1_4
+yosys> synth -top pes_1_4_demux
 ```
 ![aat21](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/61458170-416f-4252-99b6-fb06b86fac8b)
 
