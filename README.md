@@ -113,15 +113,30 @@ gtkwave pes_1_4_demux_tb.vcd
 ## Synthesis
 Code for the synthesis is given below:
 ```
-yosys:read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
-yosys:read_verilog pes_demux_1_8.v
-yosys:synth -top pes_demux_1_8
-yosys:abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib 
-yosys:show
+yosys> read_liberty -lib /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
-![image](https://github.com/spurthimalode/pes_demux_1_8/assets/142222859/fc622d88-83dc-4597-b3f3-0d0d573b68e6)
+```
+yosys> read_verilog pes_1_4_demux.v
+```
+```
+yosys> synth -top pes_demux_1_4
+```
+![aat21](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/61458170-416f-4252-99b6-fb06b86fac8b)
 
-![image](https://github.com/spurthimalode/pes_demux_1_8/assets/142222859/39d1fbd9-7fbe-4bee-a169-cdc7328c3629)
+![aat22](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/f6248763-c54d-4f54-b814-96d420d1fa49)
+
+```
+yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+```
+![aat24](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/568f02db-cdd6-4d4a-82ea-1718f4031236)
+
+```
+yosys> show
+```
+![aat25](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/9de432da-5e94-41ba-b7f6-7705ba394203)
+
+![aat23](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/32bf5118-d706-4764-bf0c-0bdc2f07c47c)
+
 
 ## Gate level simulation
 Code for gate level simulation is given below:
