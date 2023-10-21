@@ -1,4 +1,6 @@
-# Implementation of 1:4 Demultiplexer
+# 1:4 Demultiplexer
+
+## Introduction
 
 A 1:4 demultiplexer, also known as a 1-to-4 demux or simply a 1-to-4 decoder, is a digital logic circuit that takes a single input and directs it to one of four possible outputs based on the input signal. It is the opposite of a multiplexer, which takes multiple inputs and directs one of them to a single output.
 
@@ -22,7 +24,7 @@ The Truth Table for a 1:4 Demultiplexer is given below (Where S0,S1 are the thre
 ![aat11](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/eff777d6-2a43-4866-95fa-6e70a95a38f9)
 
 
-## Verilog Code 1:4 Demultiplexer
+## Verilog Code for 1:4 Demultiplexer
 
 The Verilog code for 1:4 Demultiplexer is given below :
 ```
