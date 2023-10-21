@@ -1,4 +1,4 @@
-# Implementation of 1:8 Demultiplexer
+# Implementation of 1:4 Demultiplexer
 The Demultiplexer is a one-to-many circuit. By using it, the transmission of data can be done through one single input to a number of output data lines.
 Generally, Demultiplexers are used in decoder circuits and Boolean function generators.
 
