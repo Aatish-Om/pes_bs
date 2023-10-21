@@ -147,6 +147,13 @@ yosys> show
 
 ![aat23](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/32bf5118-d706-4764-bf0c-0bdc2f07c47c)
 
+```
+write_verilog -noattr pes_1_4_demux_netlist.v
+!gvim pes_1_4_demux_netlist.v
+```
+
+![aat33](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/9b20a1fe-440c-437b-8a06-2afac6c7e7fc)
+
 
 ## Gate level simulation (GLS)
 Code for gate level simulation is given below:
