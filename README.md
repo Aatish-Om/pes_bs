@@ -106,7 +106,7 @@ endmodule
 ![aat02](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/a789f35c-dab7-4b29-abad-204d0d6e8fab)
 
 
-## Simulation
+## RTL Pre-Simulation
 Code for the simulation is given below:
 ```
 iverilog pes_1_4_demux.v pes_1_4_demux_tb.v
@@ -143,6 +143,7 @@ yosys> abc -liberty /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/lib/sky1
 ```
 yosys> show
 ```
+### Synthesized Circuit 
 ![aat25](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/9de432da-5e94-41ba-b7f6-7705ba394203)
 
 ![aat23](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/32bf5118-d706-4764-bf0c-0bdc2f07c47c)
@@ -155,7 +156,7 @@ write_verilog -noattr pes_1_4_demux_netlist.v
 ![aat33](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/9b20a1fe-440c-437b-8a06-2afac6c7e7fc)
 
 
-## Gate level simulation (GLS)
+## Gate level simulation (GLS) Post-Simulation
 Code for gate level simulation is given below:
 ```
 iverilog /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/sky130_fd_sc_hd.v pes_1_4_demux.v pes_1_4_demux_tb.v
@@ -167,3 +168,6 @@ iverilog /home/atom/VLSI/sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_mode
 gtkwave pes_1_4_demux_tb.vcd
 ```
 ![aat3](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/292dfe12-eb14-4765-b22b-c7df6f77d4f1)
+
+## Physical Design from Netlist to GDSII
+
