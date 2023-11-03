@@ -313,7 +313,7 @@ add_lefs -src $lefs
 
 
 
-### Synthesis
+## 1) Synthesis
 ![opd6](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/17eb430a-2702-4890-a72a-3bb5e64149b6)
 ```
 run_synthesis
@@ -323,7 +323,7 @@ run_synthesis
 
 ![opd7](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/4590bf65-30ac-4be0-b460-4032b273d6ef)
 
-### Floorplan
+## 2) Floorplan
 ![opd8](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/c7b2be25-993e-459d-959a-aba949253861)
 
 ```
@@ -350,7 +350,7 @@ magic -T /home/atom/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read 
 ![opd12](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/07fa3826-1d9d-47f4-8244-2380d821ab69)
 
 
-### Placement
+## 3) Placement
 - Now to run the placement we type
 ```
 run_placement
@@ -369,7 +369,7 @@ magic -T /home/atom/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read 
 ![opd17](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/1f509d0b-1b54-4dca-a631-bd818806f666)
 
 
-### CTS(Clock Tree Synthesis)
+## 4) CTS(Clock Tree Synthesis)
 - Now to run cts we type
 ```
 run_cts
@@ -400,7 +400,7 @@ run_cts
 
 ![opd27](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/e0ac7e01-6998-495a-98ef-6499d30e0a4f)
 
-### Routing
+## 5) Routing
 
 - Now to run routing we type
 ```
