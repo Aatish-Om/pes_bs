@@ -290,20 +290,11 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
 ## OpenLANE Flow
 
 ![opd1](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/5c377c01-59b4-465b-a801-4c62218c90ff)
-- First we create a folder under the name of our design in the 'designs' folder.
-- Do ```cd pes_1_4_demux```.
-- Here we create a config.json file.
+
+- config.json file 
   ![opd3](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/18b7bddd-de28-4717-9bc1-8db94267bb85)
 
-- We make a new directory called 'src'.
-- Do ```cd src```
-- We add the following files to this directory.
-- All these files are found above in the 'pes_ripple_counter' folder.
-
 ![opd2](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/d7667e28-4f00-4b2c-b3e5-e1fdaabf1345)
-
-- Now in the main 'Openlane' directory type ```mkdir pdks```.
-- Copy paste the above file in it. Found in the verilog_model folder above.
 
 ![opd4](https://github.com/Aatish-Om/pes_1_4_demux/assets/125562864/fd50867a-06b6-41bf-b716-c9c445220f26)
 ```
